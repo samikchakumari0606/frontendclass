@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* tag selector h1 */
+        h1 {
+            color: brown;
+        }
+
+        /* universal seclector */
+        *{
+            background-color: lightcoral;
+        }
+
+        #ipl{
+            height:300px;
+            width:40%;
+            border:2px solid blue
+        }
+
+        #newId{
+            height:200px;
+            width:50%;
+            border:2px solid green;
+            margin-top:2%;
+        }
+
+
+        .csk{
+            background-color: yellow;
+        }
+        .mi{
+            background-color: blue;
+        }
+ 
+        .rcb{
+            background-color: red;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- selector==>with the help of selector we can add whatever style we want for our site.
+            ==>tag, universal(*), class(.) ,id (#) -->
+
+    <div id="ipl">
+
+        <h1>this is heading</h1>
+        <p class="csk">this is csk1</p>
+        <p class="mi">this is mi1</p>
+        <p class="rcb">this is rcb</p>
+        <p class="csk">this is csk2</p>
+        <p class="csk">this is csk3</p>
+        <p class="mi">this is mi2</p>
+
+    </div>
+
+
+    <div id="newId">
+
+        <h3>this is my h3</h3>
+
+    </div>
+    
+
+    <!-- precendence==>
+      inline==>
+      id
+      class 
+      tag
+      universal -->
+           
+
+
+</body>
+
+</html>

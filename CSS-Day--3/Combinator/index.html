@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        #box{
+            height:auto;
+            width:60%;
+            border:2px solid red;
+        }
+
+        #box p{
+            background-color: lightblue;
+
+        }
+
+        #box>h1{
+            background-color: lightgoldenrodyellow;
+        }
+
+        p+h1{
+            font-size: 50px;
+        }
+
+        p~h1{
+            color:aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- combinator==> decendent(space)
+                       child(>)
+                       sibling(~)
+                       adjecent(+) -->
+
+
+        <div id="box">
+          
+           
+            <h1>this is head1</h1>
+            <p>this is para1</p>
+
+            <p>this is para2</p>
+            <h1>this is head1</h1>
+
+            <p>this is para3</p>
+            <p>this is para4</p>
+            <p>this is para5</p>
+
+            <p>this is para6</p>
+           
+
+
+        </div>  
+        
+        <h1>this is head1</h1>
+</body>
+</html>

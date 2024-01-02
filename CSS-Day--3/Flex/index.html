@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        #box{
+            height:500px;
+            width:50%;
+            border:2px solid red;
+            margin: auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        #box>div{
+            height:50%;
+            width:10%;
+            border:2px solid green;
+           
+        }
+      
+
+        #newBox{
+            height:100px;
+            width:50%;
+            border:2px solid red;
+            display:flex;
+            /* justify-content:flex-end; horizontal width
+            align-items:center;  vertical width */
+        }
+      
+    </style>
+</head>
+<body>
+
+    <!-- Flex==>1D layout in website (either row or column) -->
+
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>6</div>
+    </div>
+
+    <div id="newBox">
+      <h1>this is head</h1>
+    </div>
+    
+</body>
+</html>

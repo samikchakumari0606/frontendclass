@@ -1,0 +1,62 @@
+<style>
+
+#box{
+    height:500px;
+    width:50%;
+    border:2px solid blue;
+    margin:auto;
+    
+    
+}
+div{
+    border:2px solid red;
+    /* padding-top: 5px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 50px; */
+    /* padding: 20px 30px; */
+    /* padding:50px; */
+
+    /* margin-top: 15px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    margin-right: 60px; */
+    margin:50px;
+   
+
+}
+
+
+
+/* div{
+    height:100vh;
+    width:100vw;
+    border:2px solid red;
+}
+
+
+p{
+color:blue;
+font-weight: bold;
+font-style: italic;
+}
+
+
+h3{
+ color:rgb(3, 22, 3);
+ font-size: 30px;
+}
+
+h4{
+background-color: blue;
+font-size: 20px;
+font-family:cursive;
+font-weight:bold;
+}
+
+button{
+background-color: bisque;
+color:blue;
+font-size: 50px;
+} */
+</style>

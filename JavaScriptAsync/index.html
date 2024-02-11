@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> async programming</title>
+</head>
+<body>
+    async programming
+    <h1 id="head1"></h1>
+</body>
+</html>
+<script>
+
+    // setTimeout 
+    // setInterval
+
+ 
+//   console.log("1");
+//   console.log("2");
+//   console.log("3");
+
+//   function test(){
+//     console.log("hii")
+//   }
+
+  
+    // setTimeout(test,5000)
+    //  clearTimeout
+    // setInterval(test,2000)
+    // clearInterval()
+
+
+    let head1=document.getElementById("head1");
+    let count=11;
+    let id;
+    function myCounter(){
+        count=count-1;
+        head1.innerText=count
+
+        if(count==1){
+          clearInterval(id)   
+        }
+       
+    }
+    // 10/9/8/7/6/5/4/3/2/1
+
+    // myCounter();
+    // id=setInterval(myCounter,2000);
+
+
+
+     
+</script>  

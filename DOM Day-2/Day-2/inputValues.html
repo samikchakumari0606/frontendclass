@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputValues</title>
+</head>
+<body>
+   <!-- <p id="para">dcfvghbjnkml</p> -->
+    <input id="name" type="text" placeholder="enter your name">
+    <br>
+    <input id="number" type="number" placeholder="enter your mobile number">
+    <br>
+    <button onclick="getData()">click</button>
+
+</body>
+</html>
+<script>
+    function getData(){
+        
+        // let para=document.getElementById("para").innerText;
+        // console.log(para)
+
+        let myName=document.getElementById("name").value;
+        console.log(myName);
+        alert(myName);
+
+        let myNumber=document.getElementById("number").value;
+        console.log(myNumber);
+        alert(myNumber);
+        
+    }
+</script>

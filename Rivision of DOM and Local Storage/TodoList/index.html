@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" id="task" placeholder="enter task">
+        <br>
+        <select id="prior">
+            <option value="">Select Priority</option>
+            <option value="high">high</option>
+            <option value="low">low</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+
+
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- data will append with the help of DOM -->
+            </tbody>
+        </table>
+   
+</body>
+</html>
+<script>
+
+    document.querySelector("form").addEventListener("submit",TodoFunc);
+
+    let TodoArr=JSON.parse(localStorage.getItem("Todo"))||[]
+    function TodoFunc(){
+        event.preventDefault();
+     let taskName=document.getElementById("task").value;
+     let priority=document.getElementById("prior").value;
+    //  console.log(taskName);
+    //  console.log(priority);
+
+    let TodoObj={
+        task:taskName,
+        prior:priority
+    }
+    // console.log(TodoObj);
+    TodoArr.push(TodoObj);
+    console.log(TodoArr);
+    localStorage.setItem("Todo",JSON.stringify(TodoArr));
+
+   
+    }
+
+    displayTable(TodoArr);
+
+    function displayTable(TodoArr){
+       document.querySelector("tbody").innerHTML=""
+        TodoArr.forEach(function(elem,index){
+            let row=document.createElement("tr");
+            let col1=document.createElement("td");
+            col1.innerText=elem.task;
+            let col2=document.createElement("td");
+            col2.innerText=elem.prior;
+            let col3=document.createElement("td");
+            col3.innerText="delete";
+            col3.addEventListener("click",function(){
+                  delFunc(elem,index)
+            })
+            row.append(col1,col2,col3);
+            document.querySelector("tbody").append(row);
+
+        })
+    }
+
+
+    function delFunc(elem,index){
+        console.log(index);
+        console.log(elem);
+        TodoArr.splice(index,1);
+        displayTable(TodoArr);
+        localStorage.setItem("Todo",JSON.stringify(TodoArr));
+    }
+</script>

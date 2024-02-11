@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day-3</title>
+</head>
+<body>
+    <!-- <h1 id="head1"></h1>
+    <input id="name" type="text" placeholder="enter your name">
+    <br>
+    <h3 id="head3"></h3>
+    <input id="email" type="email" placeholder="enter your email">
+    <br>
+    <button onclick="getData()">submit</button> -->
+    <h1 id="heading"></h1>
+    <button onclick="btn()">Change my Text</button>
+</body>
+</html>
+<script>
+    
+
+function getData(){
+ 
+    let myName=document.getElementById("name").value;
+    let myEmail=document.getElementById("email").value;
+    console.log(myName);
+    console.log(myEmail);
+    document.getElementById("head1").innerText=myName;
+    document.getElementById("head3").innerText=myEmail
+    
+}
+
+function btn(){
+     document.getElementById("heading").innerText="this is my new Text";
+}
+</script>

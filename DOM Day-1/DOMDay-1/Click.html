@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Click</title>
+</head>
+<body>
+    <button onclick="LikeMe()">Click here</button>
+    <button onclick="counter()">count my like</button>
+   <br>
+   <br>
+    <button onclick="myLastBtn()">my Btn</button>
+<br>
+<!-- <button onclick="add()">Operation</button> -->
+
+</body>
+</html>
+<script>
+    //   function==>set of instrcutions
+      function LikeMe(){
+        console.log("hiii")
+      }
+
+      let count=1;
+      function counter(){
+        console.log(count);
+        count++;
+      }
+
+      function add(){
+        let x=10;
+        let y=5;
+        let sum;
+        sum=x-y;
+        console.log(sum);
+      }
+
+
+      function myLastBtn(){
+        console.log("this is button");
+        alert("congratulations");
+      }
+
+
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Revision</title>
+    <style>
+       #myFlex{
+        height:auto;
+        width:80%;
+        border:2px solid red;
+        display: flex;
+        flex-direction: row;
+        background-color: lightcoral;
+        margin:auto;
+
+       }
+
+       #myFlex>div{
+        height:50%;
+        width:100%;
+        border:2px solid green;
+        background-color: rgb(213, 224, 202);
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        display:flex;
+        justify-content: center;
+        align-items: center; 
+       }
+
+       h1{
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- Flex==>1D layout
+        ==>row either column -->
+   <h1>Welcome</h1>
+    <div id="myFlex">
+
+     <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+
+    </div>    
+    
+</body>
+</html>

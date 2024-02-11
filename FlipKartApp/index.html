@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #box{
+            border:2px solid red;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:12px;
+        }
+        #box>div{
+            border:2px solid green;
+        }
+        img{
+            height:10%;
+            width:10%;
+        }
+    </style>
+</head>
+<body>
+  <a href="./index.html">Home Page</a>
+  <br>
+  <a href="./electronic.html">Electronic page</a>
+  <br>
+  <a href="./cart.html">cart page</a>
+  
+
+  <button onclick="highToLow()">High To Low</button>
+  <button onclick="lowToHigh()">Low To High</button>
+  <br>
+  <br>
+  <input type="text" placeholder="search your product" id="query" oninput="search()">
+  <br>
+
+    <div id="box">
+
+    </div>
+    
+</body>
+</html>
+<script src="./index.js"></script>
+
+
+<!-- Fetch data
+category wise data get electronics/complete data/j/c
+add to cart your item
+remove item from the cart
+Sorting High To Low and Low To High
+search(user can search products)
+Total Price
+Number of item -->

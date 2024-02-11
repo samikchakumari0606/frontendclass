@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList Day-5</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="task" placeholder="enter your task">
+        <br>
+        <select id="prior">
+            <option value="">select option</option>
+            <option value="high">high</option>
+            <option value="low">low</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>task name</th>
+                <th>priority</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- adding with the help of DOM -->
+            
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+
+
+    document.querySelector("form").addEventListener("submit",myFunc);
+
+    // let TodoArr=[];
+    let TodoArr=JSON.parse(localStorage.getItem("Todo"))||[]//get item
+    function myFunc(){
+         event.preventDefault();
+
+         let task=document.querySelector("#task").value;
+         let priority=document.querySelector("#prior").value;
+        //  console.log(task);
+        //  console.log(priority);
+
+         let TodoObj={
+            taskObj:task,
+            prior:priority
+         }
+         
+    //    console.log(TodoObj)
+       TodoArr.push(TodoObj);
+       console.log(TodoArr);
+       
+       localStorage.setItem("Todo",JSON.stringify(TodoArr));//getItem
+
+       displayTable(TodoArr)
+
+    }
+
+    function displayTable(TodoArr){
+        document.querySelector("tbody").innerHTML=""
+        TodoArr.forEach(function(elem){
+
+            let row=document.createElement("tr");
+            let col1=document.createElement("td");
+            col1.innerText=elem.taskObj;
+            let col2=document.createElement("td");
+            col2.innerText=elem.prior;
+            if(elem.prior=="high"){
+               col2.style.backgroundColor="red"; 
+            }
+            else{
+                col2.style.backgroundColor="green";
+            }
+            let col3=document.createElement("td");
+            col3.innerText="delete";
+            col3.addEventListener("click",function(){
+                 event.target.parentNode.remove();
+            })
+            row.append(col1,col2,col3);
+            document.querySelector("tbody").append(row);
+        })
+    }
+
+   
+
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+    <style>
+      #box{
+        background-color: aquamarine;
+        padding:30px;
+        display:flex;
+      }
+      #box>div{
+        background-color: teal;
+        padding:30px;
+        margin:10px;
+        font-size: 20px;
+
+      }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+<script>
+   
+   let box=document.querySelectorAll("#box>div");
+   console.log(box);
+   
+   for(let i=0;i<box.length;i++){
+    box[i].addEventListener("click",myFunction)
+   }
+
+   function myFunction(event){
+    console.log(event.target.innerText);
+   }
+</script>

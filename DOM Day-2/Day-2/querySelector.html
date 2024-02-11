@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query Selector</title>
+</head>
+<body>
+     <p>para1</p>
+     <p>para2</p>
+     <p>para3</p>
+     <p>para4</p>
+
+     <h1>head1</h1>
+     <h1>2</h1>
+     <h1>3</h1>
+     <h1>4</h1>
+     <h1>5</h1>
+
+     <h3 class="head3">this is my head3</h3>
+     <p id="myParaGraph">this is para</p>
+
+</body>
+</html>
+<script>
+
+// querySelector==>querySelector will take only the 1st element for styling;
+// querySelectorAll==>all
+
+let para=document.querySelector("p");
+console.log(para);
+
+// let head=document.querySelector("h1");
+// console.log(head);
+
+let head2=document.querySelectorAll("h1");
+console.log(head2);
+
+let head3=document.querySelector(".head3");
+console.log(head3);
+
+let myPara1=document.querySelector("#myParaGraph");
+console.log(myPara1)
+
+
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // setItem(key and Value);
+    // get(key)
+    // removeItem(key);
+    // clear();
+
+    localStorage.setItem("myName","Pulkit")
+    localStorage.setItem("myEmail","Pulkit@gmail.com");
+
+    localStorage.getItem("myEmail");
+    localStorage.removeItem("myName");
+
+    localStorage.clear();
+
+    let arr=[1,2,3,4]
+    let obj={
+        name:"pulkit"
+    }
+    localStorage.setItem("myArr",JSON.stringify(arr));
+    
+    JSON.parse(localStorage.getItem("myArr"));
+
+</script>

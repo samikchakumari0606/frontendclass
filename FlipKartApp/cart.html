@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        #box{
+            border:2px solid green;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:12px;
+        }
+        #box>div{
+            border:2px solid blue;
+        }
+        img{
+            height:10%;
+            width:10%;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">Home Page</a>
+  <br>
+  <a href="./electronic.html">Electronic page</a>
+  <br> 
+  <a href="./cart.html">cart page</a>
+
+  <h1>Total Price <span id="price">0</span></h1>
+  <h1>Number of Product  <span id="item"> 0</span></h1>
+
+  <div id="box">
+
+  </div>
+</body>
+</html>
+<script src="./cart.js"></script>

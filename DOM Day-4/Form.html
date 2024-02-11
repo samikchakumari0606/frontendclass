@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form DOM</title>
+</head>
+<body>
+    <!-- <input id="name" type="text" placeholder="enter your name">
+    <br>
+    <input id="age" type="number" placeholder="enter your age">
+    <br>
+    <button id="btn">submit</button> -->
+
+    <form>
+        <input id="name" type="text" placeholder="enter your name" >
+        <br>
+        <input id="age" type="number" placeholder="age">
+        <br>
+        <input type="submit" value="click here">
+    </form>
+
+</body>
+</html>
+<script>
+    // document.getElementById("btn").addEventListener("click",myBtn);
+    
+    // function myBtn(){
+    //    let myName=document.getElementById("name").value;
+    //    let myAge=document.getElementById("age").value;
+    //    console.log(myName,myAge)
+    // }
+
+    document.querySelector("form").addEventListener("submit",myFormBtn);
+
+    function myFormBtn(){
+        event.preventDefault();
+        let userName=document.getElementById("name").value;
+        let userAge=document.getElementById("age").value;
+        console.log(userName);
+        console.log(userAge);
+    }
+
+//    Steps for using Form in Dom==>
+//     ==>wrap input tags around form tags
+//     ==>use input type=submit to submit data
+//     ==>.addEventListener in form(eventName=submit)
+//     ==>use event.preventDefault() to remove default behviour Form(to hold the screen)
+
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM styleing</title>
+   
+</head>
+<body>
+    <p class="para">para1</p>
+    <p class="para">para2</p>
+    <p class="para">para3</p>
+    <p class="para">para4</p>
+
+    <h4 id="head4">This is my Head4</h4>
+
+    <div id="box">
+        <h6>this is my h6 inside div</h6>
+    </div>
+
+</body>
+</html>
+<script>
+
+let myPara=document.getElementsByClassName("para");
+console.log(myPara);
+
+// myParastyle[0]..backgroundColor="red";
+// myPara[2].style.backgroundColor="green";
+
+
+// for(let i=0;i<myPara.length;i++){
+//      myPara[i].style.backgroundColor="red"
+// }
+
+let head4=document.getElementById("head4");
+console.log(head4);
+
+head4.style.color="blue";
+head4.style.backgroundColor="lightblue";
+
+let box=document.getElementById("box");
+
+// console.log(box);
+
+box.style.border="2px solid red";
+box.style.height="100px";
+box.style.width="50%";
+box.style.fontSize="30px";
+box.style.backgroundColor="lightGreen";
+
+
+
+
+</script>

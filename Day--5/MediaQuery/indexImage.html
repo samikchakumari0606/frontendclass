@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query3</title>
+    <style>
+        #OuterDiv {
+            height: 300px;
+            width: 80%;
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        img {
+            height: 50%;
+            width: 80%;
+        }
+
+        @media screen and (min-width:250px) and (max-width:500px) {
+
+            #OuterDiv{
+                background-color: lightskyblue;
+            }
+
+            img {
+                border-radius: 50%;
+               
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="OuterDiv">
+
+        <img src="https://images.unsplash.com/photo-1703875497895-0de198243647?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+            alt="myFirstImage">
+        <img src="https://images.unsplash.com/photo-1682686580433-2af05ee670ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D"
+            alt="mySecondImage">
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+</head>
+<body>
+   
+    <div id="box">
+
+    </div>
+</body>
+</html>
+<script>
+
+function slideshow(){
+
+    let arr=[
+        "https://images.unsplash.com/photo-1641492516424-0348c3072884?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9yYWVtb258ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1683768814429-bb2530983c96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvcmFlbW9ufGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1633069404479-2a8aa9526ea6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9yYWVtb258ZW58MHx8MHx8fDA%3D"
+    ]
+
+    let box=document.getElementById("box");
+    let image=document.createElement("img");
+
+
+    let i=0;
+    image.src=arr[i];
+    box.append(image);
+    i++;
+    setInterval(function(){
+      if(i==3){
+        i=0;
+      }
+        image.src=arr[i];
+        box.append(image);
+        i++;
+
+    },3000)
+
+
+}
+
+slideshow();
+
+</script>

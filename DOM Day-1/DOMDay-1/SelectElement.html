@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Select An element</title>
+   <style>
+    #myHeading{
+        background-color: rgb(116, 14, 48);
+    }
+    .myPara{
+        color:teal;
+    }
+   </style>
+</head>
+<body>
+    <!-- selecting an element==>ID,class,TagName -->
+    <h1 id="myHeadingNew">This is head1</h1>
+    <p id="myParaGraph">this is my paraGraph</p>
+    
+    <p class="myPara">this is para1</p>
+    <p class="myPara">this is para2</p>
+    <h3 class="myPara">this is my heading 3</h3>
+
+    <h4>this is my heading4</h4>
+    <p >This is my Last ParaGraph</p>
+</body>
+</html>
+<script>
+
+// selecting an element by the use of Id
+// let myHead=document.getElementById("myHeadingNew");
+// console.log(myHead);
+// let y=document.getElementById("myParaGraph");
+// console.log(y);
+
+// selecting an element by the use of class
+// let myParaGraph=document.getElementsByClassName("myPara");
+// console.log(myParaGraph);
+
+// selecting an element by the use of TagName
+let myHeading=document.getElementsByTagName("h4");
+console.log(myHeading);
+
+let myPara=document.getElementsByTagName("p");
+console.log(myPara);
+
+
+</script>

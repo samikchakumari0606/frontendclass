@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+    LocalStorage
+</body>
+</html>
+
+<script>
+ 
+// setItem()==>key and value we can set data in our localStorage
+// getItem()==>key data get in our localStorage
+// removeItem()==>item remove with the help of key
+// clear()==>clear localStorage data
+//string//number
+
+// localStorage.setItem("key",value)//syntax
+
+// localStorage.setItem("myName","samiksha")//string
+// localStorage.setItem("movie","RRR");
+// localStorage.setItem("rating",9)//number
+
+// localStorage.getItem("myName");
+
+// let movieName=localStorage.getItem("movie");
+// console.log(movieName);
+
+// let myName=localStorage.getItem("myName");
+// console.log(myName);
+
+// localStorage.removeItem("myName");
+// localStorage.clear();
+
+
+
+// JSON==>JavaScript Object Notation 
+// frontend <===>JSON<==>backend
+
+let jsonObj={
+    "name":"sachin",
+    "age":"25"
+}
+
+
+let MYarr=[1,2,3,4];
+
+localStorage.setItem("storing_array",JSON.stringify(MYarr))
+
+let obj={
+    name:"sachin",
+    age:25
+}
+
+localStorage.setItem("storing_object",JSON.stringify(obj))
+
+let myArr=JSON.parse(localStorage.getItem("storing_array"));
+console.log(myArr);
+
+let myObj=JSON.parse(localStorage.getItem("storing_object"));
+console.log(myObj);
+
+
+
+</script>

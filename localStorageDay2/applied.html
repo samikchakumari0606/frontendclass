@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Page</title>
+</head>
+<body>
+
+    <div>
+        <a href="./index.html">Home Page</a>
+        <br>
+        <a href="./applied.html">Applied Page</a>
+        <br>
+        <a href="./bookmark.html">Bookmark Page</a>
+       </div>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Email</th>
+                <th>Student Role</th>
+                <th>BookMark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- data append with the help of dom -->
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+     let HomeArr=JSON.parse(localStorage.getItem("HomePageData"));
+     console.log(HomeArr);
+     displayTable(HomeArr);
+
+
+    //  let AppliedArr=[]
+     let AppliedArr=JSON.parse(localStorage.getItem("AppliedPageData"))||[];
+
+
+     function displayTable(HomeArr){
+          document.querySelector("tbody").innerHTML=""
+        HomeArr.forEach(function(elem,index){
+
+            let row=document.createElement("tr");
+            let col1=document.createElement("td");
+            col1.innerText=elem.name;
+            let col2=document.createElement("td");
+            col2.innerText=elem.email;
+            let col3=document.createElement("td");
+            col3.innerText=elem.role;
+            let col4=document.createElement("td");
+            col4.innerText="bookmark";
+            col4.addEventListener("click",function(){
+                bookmarkFunc(elem,index)
+            })
+            row.append(col1,col2,col3,col4);
+            document.querySelector("tbody").append(row);
+
+        })
+     }
+
+     function bookmarkFunc(elem,index){
+         console.log(index);
+         console.log(elem);
+         AppliedArr.push(elem);
+         localStorage.setItem("AppliedPageData",JSON.stringify(AppliedArr))
+
+     } 
+
+
+</script>

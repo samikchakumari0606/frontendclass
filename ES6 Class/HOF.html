@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOF</title>
+</head>
+<body>
+    HOF==>Heigher Order Function
+    
+    ==>Heigher Order Function that operate on other function either by taking them as argument or by returning them.
+    ==>forEach, map, filter, reduce
+
+    ==>forEach==>It execute provided function once for each array element.
+    ==>map==>it create array. The final array will have same number of element as that of calling array.
+    ==>filter==>it create array. It will only the element which satisfy the condition.
+    ==>reduce==>it create single output.It execute a reducer function for each array elemement.
+
+</body>
+</html>
+<script>
+    let arr=[1,2,3,4,5,6,7];
+  
+    let first=arr.forEach((el)=>{
+        console.log(el)
+    })
+
+    let second=arr.map((el)=>{
+             return el    
+    })
+    console.log(second);
+      
+    let third=arr.filter((el)=>{
+            return el%3==0
+    })
+    console.log(third);
+
+    let fourth=arr.reduce((sum,el)=>{
+         return sum+el
+    })
+       
+    console.log(fourth)
+
+   
+
+
+
+</script>

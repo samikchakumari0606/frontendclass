@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Day-2</title>
+</head>
+<body>
+   <div>
+    <a href="./index.html">Home Page</a>
+    <br>
+    <a href="./applied.html">Applied Page</a>
+    <br>
+    <a href="./bookmark.html">Bookmark Page</a>
+   </div>
+   
+   <br>
+   <br>
+   <form>
+    <input type="text" id="name" placeholder="enter name">
+    <br>
+    <input type="email" id="email" placeholder="enter email">
+    <br>
+    <select id="role">
+     <option>Select role</option>
+     <option value="FullStack Developer">FullStack Developer</option>
+     <option value="Frontend">Frontend</option>
+     <option value="Backend">Backend</option>
+    </select>
+    <br>
+    <input type="submit">
+   </form>
+
+</body>
+</html>
+<script>
+
+// localStorage==>local storage is a property of js that allows js sites and app to save key value pairs in web-browser with no expiration date.
+
+
+  document.querySelector("form").addEventListener("submit",myHomePageFunc);
+
+//   let HomeArr=[];
+  let HomeArr=JSON.parse(localStorage.getItem("HomePageData"))||[]
+  
+  function myHomePageFunc(){
+    event.preventDefault();
+
+    let HomeObj={
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        role:document.getElementById("role").value
+    }
+
+    // console.log(HomeObj);
+    HomeArr.push(HomeObj);
+    console.log(HomeArr);
+    localStorage.setItem("HomePageData",JSON.stringify(HomeArr))
+
+  }
+
+    
+</script>

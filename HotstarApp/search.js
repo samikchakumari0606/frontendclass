@@ -8,7 +8,7 @@
 // console.log(`sum of ${num1} and  ${num2} is ${num3} `)//template litrals
 
 
-async function main(){
+async function search(){
     let query=document.getElementById("query").value;
     let res=await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=fcbdda70&s=${query}`);
     let data=await res.json();
@@ -38,15 +38,7 @@ function appendMovieData(data){
 
 }
 
-let id;
-function debounce(func,delay){
-    if(id){
-        clearTimeout(id)
-    }
-id=setTimeout(function(){
-     func()
-},delay)
-}
+
 
 
 

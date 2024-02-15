@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error handleling</title>
+</head>
+<body>
+    error handle ==>try and catch
+
+    async programming==>async and await
+                    ==>.then();
+</body>
+</html>
+<script>
+
+// async function getData(){
+// try{
+//     let res= await fetch("https://fakestoreapi.com/products");
+//     let data=await res.json();
+//     console.log(data)
+// }
+// catch(err){
+//     console.log("err",err)
+// }
+
+// }
+// getData();
+
+
+function getData(){
+    let res=fetch("https://fakestoreapi.com/products");
+    
+    res.then((value)=>{
+        console.log(value)
+        return value.json()
+    }).then((value2)=>{
+        return console.log(value2)
+    })
+    
+}
+
+getData();
+
+
+</script>

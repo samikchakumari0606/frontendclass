@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event loop</h1>
+
+    Heap==>Memory allocation
+    stack==>stack holds the execution contest.
+    web APIs=>setTimeout,DOM, AJAX(Async JavaScript XML)
+
+
+    event loop==>Js has runtime model based on eventloop which is responsible for excuting the code, collecting and proccesing the event and execute queued subtasks.
+                 The event loop pushes the task from task queue to call stack.
+             ==>event loop internally helps to do async programmimg.
+                  
+
+
+</body>
+</html>
+<script>
+
+function one(){
+    console.log("1")
+}
+
+function two(){
+    console.log("2")
+}
+
+
+function three(){
+    setTimeout(()=>{
+      console.log("3")
+    },3000)
+
+    console.log("4")
+}
+
+console.log("5")
+
+one();
+two();
+three();
+
+
+
+</script>

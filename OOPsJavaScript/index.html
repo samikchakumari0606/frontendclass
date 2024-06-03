@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+</head>
+<body>
+    
+   OOPs==>Object Oriented Programming
+       ==>Way of Programming
+       ==>Object Class
+       ==>DRY(Don't Repeat Code)
+       ==>Code Resuse
+       ==>Code Reduce
+
+
+  class==>template/blueprint of an object.
+  
+  object==>Contain Feature and action.
+        ==> An Object is a unique entity that contain properties and method.
+
+        Features==>FullName,Height,weight,age
+        Action==>walk,dance,play,riding,sleeping,reading,eating
+
+        
+
+
+  Pillars of OOPs==>
+  [i]Inheritance ==>one object get access to properties and methods to other object.  
+                 ==>resuseability
+                 ==>inhance performance
+                 ==>DRY
+  
+  [ii]Encapsulation==>The process of wrapping properties and function within a single unit.
+  
+  [iii]Abstraction==>Process of showing relevent/essentail infomation and hiding the irrelevent infomation. 
+
+  [iv]Polymorphism==>single unit can do multiple thing.   
+
+</body>
+</html>
+<script>
+
+
+// class Employee{
+
+//     constructor(name,id){
+//         this.name=name;
+//         this.id=id;
+//     }
+
+//     detail(){
+//         return (`The name of employee is ${this.name}`)
+//     }
+
+// }
+
+
+// var obj1= new Employee("Bhoomika","101");
+// console.log(obj1)
+
+// var obj2=new Employee("Rohit","102");
+// console.log(obj2);
+
+// console.log(obj1.detail());
+// console.log(obj2.detail());
+
+
+
+class person{
+    constructor(name){
+        this.name=name
+    }
+
+    getDetails(){
+        return (`the name of person is ${this.name}`)
+    }
+}
+
+class student extends person{
+  
+    constructor(name,id){
+        super(name)
+        this.id=id
+    }
+    getDetails(){
+        return (`the id of the person is ${this.id}`)
+    }
+}
+
+let student1=new student("Pritii","103");
+console.log(student1)
+
+
+
+
+</script>

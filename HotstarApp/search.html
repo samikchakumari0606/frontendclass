@@ -8,10 +8,16 @@
 <body>
     <!-- omdb api
     fakestore -->
+    
+   <!-- 
+    debouncing==>reduce the network request 
+                   ==>code optimise -->
 
-    <!-- <input type="text" placeholder="search your fav movies" id="query" oninput="search()">
+     <!-- <input type="text" placeholder="search your fav movies" id="query" oninput="search()">
     <br> -->
-    <!-- <input type="text" oninput="debounce(main,5000)" id="query" > -->
+    
+    <input type="text" placeholder="search your movies/series/news" id="query" oninput="debounce(myDebounce,2000)" >
+
     <div id="box">
 
     </div>

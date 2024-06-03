@@ -1,4 +1,6 @@
 let apiKey="7a1c7408fd1f2c695b08c6bc1ca36608";
+let map=document.getElementById("gmap_canvas");
+
 async function submit(){
     let query=document.getElementById("query").value;
     let url=`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=metric`;
@@ -21,4 +23,7 @@ function appendData(data){
     let cityPressure=document.createElement("h1");
     cityPressure.innerText=`City Pressure - ${data.main.pressure}`;
     box.append(cityName,cityTemp,cityHumidity,cityPressure);
+
+    map.src=`https://maps.google.com/maps?q=${data.name}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 }
+

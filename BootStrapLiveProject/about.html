@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-light">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./contact.html">Email</a></li>
+              <li><a class="dropdown-item" href="./contact.html">LinkedIn</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./contact.html">Phone Call</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero section -->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Welcome in the coding world</h1>
+        <p class="lead text-light">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-info my-2">get in touch</a>
+          <a href="#" class="btn btn-secondary my-2">buy a course</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- multiple cards -->
+  <div class="container">
+    <div class="album py-5 bg-dark">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+               
+                <img src="https://plus.unsplash.com/premium_photo-1661421687248-7bb863c60723?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"  width="100%" height="225">
+              
+                <div class="card-body bg-dark text-light">
+                  <p class="card-text"> Get a Crash Course of 15 days and become expert in FullStack</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Frontend Development</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://plus.unsplash.com/premium_photo-1681400690940-8eff232a8f7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Backend Development</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://plus.unsplash.com/premium_photo-1663075847012-c781e0d194ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Digital Marketing</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Cloud Computing</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1704717700476-af979f54baf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Data Analyst</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Web Desiging</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://plus.unsplash.com/premium_photo-1661548080414-743d241c05ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">Cyber Security</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1668713701571-1d1cbcefe7bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZGluZyUyMGltYWdlfGVufDB8fDB8fHww"  width="100%" height="225">
+                <div class="card-body  bg-dark text-light">
+                  <p class="card-text">SEO</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-info">Edit</button>
+                    </div>
+                    <small class="text-body-info">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
